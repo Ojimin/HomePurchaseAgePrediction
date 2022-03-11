@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HomePurchaseAgePrediction</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <h1 onClick="location.href='/'"">Home Purchase Age Prediction</h1>
+      <h4>
+        사용자의 위치기반으로 집 구매 시기를 예측해드립니다 (사용자 위치 근처의
+        집을 찾아드립니다)
+      </h4>
+      <form action=" /geolocation" method="GET" onsubmit="return jbSubmit()">
+      <div>
+        월소득(단위:만 원)
+        <input type="text" id="salary" name="salary" placeholder="월소득을 숫자로 입력해주세요." />
+      </div>
+      <div>
+        지출(단위:만 원)
+        <input type="text" id="expenditure" name="expenditure" placeholder="지출을 숫자로 입력해주세요." />
+      </div>
+      <div>
+        거주지역 (ex 서울특별시 00구 00동, 경기도 수원영통구 영통동, 강원도 강릉시 견소동)
+        <input type="text" id="address" name="address" placeholder="(도/시/구/동)을 입력해주세요." />
+      </div>
+      <div>
+        <input class="btn" type="submit" value="SUBMIT" />
+      </div>
+      </form>
+  </main>
+  <script type="text/javascript" src="../js/home_page.js"></script>
+</body>
+
+</html>
